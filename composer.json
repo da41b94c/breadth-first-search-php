@@ -1,0 +1,17 @@
+{
+	"name": "novikey/breadth-first-search-php",
+	"description": "A small, dependency-free breadth-first search implementation in PHP.",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": ">=8.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"NoviKey\\Graph\\": "src/"
+		}
+	},
+	"scripts": {
+		"test": "php tests/run.php"
+	}
+}
