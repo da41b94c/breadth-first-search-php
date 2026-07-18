@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use InvalidArgumentException;
 use NoviKey\Graph\BreadthFirstSearch;
 
 require dirname(__DIR__) . '/src/BreadthFirstSearch.php';
@@ -47,7 +46,7 @@ $ExceptionThrown = false;
 
 try {
 	new BreadthFirstSearch(['A' => ['B']]);
-} catch (InvalidArgumentException) {
+} catch (\InvalidArgumentException) {
 	$ExceptionThrown = true;
 }
 
@@ -57,7 +56,7 @@ $ExceptionThrown = false;
 
 try {
 	new BreadthFirstSearch(['' => []]);
-} catch (InvalidArgumentException) {
+} catch (\InvalidArgumentException) {
 	$ExceptionThrown = true;
 }
 
